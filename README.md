@@ -14,7 +14,7 @@ javac -d <source_directory> io/Reader.java
 javac -d <source_directory> core/CacheRunner.java
 ```
 
-Run the LRU Cache:
+Head over to the source directory and Run the LRU Cache:
 ```
 java compiled/lru/CacheRunner
 
