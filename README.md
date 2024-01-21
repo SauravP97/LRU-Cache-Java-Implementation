@@ -36,6 +36,10 @@ java compiled/lru/CacheRunner
 0 4     // cache.get(4), returns 4
 ```
 
+> Try this problem on Leetcode: [Link](https://leetcode.com/problems/lru-cache/description/)
+
+---
+
 ## Problem Statement
 
 Design a Least Recently Used (LRU) cache from scratch. The basic idea is to implement an LRU Cache that supports two operations:
@@ -43,8 +47,9 @@ Design a Least Recently Used (LRU) cache from scratch. The basic idea is to impl
 1. <u>**Get (int key)**</u>: Returns the value of the **key**, if that key exists, otherwise return **-1** or **null**.
 2. <u>**Put (int key, int value)** </u>: Update the **value** of the **key** if the key exists. Otherwise, add the **key-value** pair to the cache. If the number of key exceeds the **capacity** from this operation, then evict the least recently used key.
 
-The function **get** and **put** must each run in <u>**O(1)**</u> average time complexity.
+> The function **get** and **put** must each run in <u>**O(1)**</u> average time complexity.
 
+---
 ## Solution
 
 The implementation involves two Data Structures:
@@ -55,9 +60,12 @@ The implementation involves two Data Structures:
 At first we start the LRU Cache by setting the **capacity** of the cache. This means that the cache cannot store the key-value pairs exceeding the capacity value of the LRU Cache.
 
 The LRU Cache implementation supports two operations:
+1. int get(int key)
+2. void put(int key, int value)
 
 ![LRU Cache Internals](/media/cache1.jpg)
 
+---
 ## int get(int key)
 
 The method returns the **value** of the **key** if it exists, otherwise return **-1** or **null**.
@@ -70,11 +78,11 @@ We get the exact **Node** in the **Doubly LinkedList** which holds the **key** o
 
 The Get operation takes place as follows.
 
-![LRU Cache - Get operation](/media/cache2.jpg)
+![LRU Cache - Get operation](/media/cache3.jpg)
 
-
+---
 ## void put(int key, int value)
 
 The method sets the **value** for the **key** in the **Cache**. If the **key** does not exist then the added key is the latest used entry in the Cache. Otherwise the last used time of the **key** is refreshed to be the latest used entry in the Cache.
 
-![LRU Cache - Put operation](/media/cache3.jpeg)
+![LRU Cache - Put operation](/media/cache2.jpeg)
