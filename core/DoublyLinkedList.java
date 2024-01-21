@@ -1,4 +1,4 @@
-package linkedlist.problems.lru;
+package compiled.lru;
 
 import java.util.HashMap;
 

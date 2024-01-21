@@ -1,4 +1,4 @@
-package linkedlist.problems.lru;
+package compiled.lru;
 
 import java.util.HashMap;
 
@@ -6,13 +6,13 @@ public class LruCache {
     private final int CACHE_MAX_SIZE;
     private int CACHE_SIZE;
     private HashMap<Integer, Integer> cacheMap;
-    private DoublyList doublyList;
+    private DoublyLinkedList doublyList;
 
     LruCache(int capacity) {
         this.CACHE_SIZE = 0;
         this.CACHE_MAX_SIZE = capacity;
         this.cacheMap = new HashMap<>();
-        this.doublyList = new DoublyList();
+        this.doublyList = new DoublyLinkedList();
     }
 
     public int get(int key) {
