@@ -78,11 +78,11 @@ We get the exact **Node** in the **Doubly LinkedList** which holds the **key** o
 
 The Get operation takes place as follows.
 
-![LRU Cache - Get operation](/media/cache3.jpg)
+![LRU Cache - Get operation](/media/cache3.jpeg)
 
 ---
 ## void put(int key, int value)
 
 The method sets the **value** for the **key** in the **Cache**. If the **key** does not exist then the added key is the latest used entry in the Cache. Otherwise the last used time of the **key** is refreshed to be the latest used entry in the Cache.
 
-![LRU Cache - Put operation](/media/cache2.jpeg)
+![LRU Cache - Put operation](/media/cache2.jpg)
